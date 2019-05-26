@@ -5,10 +5,21 @@ title: Home
 <h1>Carlos Estrada</h1>
 <h4>Developer & Designer</h4>
 
-<ul>
+<div class="row">
 	{% for project in site.projects %}
-		<li>
-			<a href="{{ project.url }}">{{ project.title }}: {{ project.excerpt }}</a>
-		</li>
+		<div class="col-12 col-lg-4">
+			<a href="{{ project.url }}" class="card-link">
+			<div class="card card-hover bg-dark-accent">
+				{% if project.featured != null %}
+				<img src="{{ project.featured }}" class="card-img-top" alt="{{ project.title }} featured image">
+				{% endif %}
+				<div class="card-body">
+					<h3 class="card-title">{{ project.title }}</h3>
+					<p class="card-text text-muted">{{ project.excerpt }}</p>
+					<p class="card-text"><small class="text-muted">{{ project.date | date: '%B %d, %Y'}}</small></p>
+				</div>
+			</div>
+			</a>
+		</div>
 	{% endfor %}
-</ul>
+</div>

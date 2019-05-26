@@ -9,7 +9,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="/vendors/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
 	</head>
-	<body>
+	<body class="bg-dark text-light">
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
 	<div class="container">
 		<a class="navbar-brand" href="http://localhost:4000">Carlos Estrada</a>
@@ -38,6 +38,7 @@
 					</a>
 				</li>
 			
+			</ul>
 		</div>
 	</div>
 </nav>
@@ -45,13 +46,24 @@
 			<h1>Carlos Estrada</h1>
 <h4>Developer & Designer</h4>
 
-<ul>
+<div class="row">
 	
-		<li>
-			<a href="/nox">Nox: Nox is an iOS theme</a>
-		</li>
+		<div class="col-12 col-lg-4">
+			<a href="/nox" class="card-link">
+			<div class="card card-hover bg-dark-accent">
+				
+				<img src="/resources/img/project/nox/featured.jpg" class="card-img-top" alt="Nox featured image">
+				
+				<div class="card-body">
+					<h3 class="card-title">Nox</h3>
+					<p class="card-text text-muted">A dark iOS theme made for the Anemone and Snowboard theming engines, featuring over 300 icons.</p>
+					<p class="card-text"><small class="text-muted">May 25, 2019</small></p>
+				</div>
+			</div>
+			</a>
+		</div>
 	
-</ul>
+</div>
 		</div>
 	</body>
 </html>

@@ -1,17 +1,20 @@
 title: Carlos Estrada
 permalink: /:slug
 
-sass:
-  style: compressed
-
+# Social media links
 social:
   twitter: https://twitter.com/cestrrada
   github: https://github.com/cestrrada
   behance: https://behance.net/cestrrada
   linkedin: https://linkedin.com/in/cestrrada
   email: mailto:cestrrada@gmail.com
-  
+
+# Projects
 collections:
   projects:
     permalink: /:slug
     output: true
+    
+# Project Settings
+sass:
+  style: compressed
