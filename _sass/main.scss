@@ -23,3 +23,41 @@ a.card-link {
 		color: inherit;
 	}
 }
+
+.svg-light svg path {
+	fill: white;
+}
+
+.svg-dark svg path {
+	fill: theme-color("dark");
+}
+
+.logo-nav svg {
+	height: 40px;
+}
+
+.logo-80 svg {
+	height: 80px;
+}
+
+.logo-100 svg {
+	height: 100%;
+}
+
+.social-icons {
+	font-size: 1.75em;
+}
+
+.site-title {
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.site-tagline {
+	font-weight: 400;
+	letter-spacing: .25em;
+}
+
+.text-decoration-none, .text-decoration-none:hover {
+	text-decoration: none;
+}
