@@ -2,4 +2,13 @@
 layout: default
 title: Home
 ---
-<h1>{{ "Hello World!" | downcase }}</h1>
+<h1>Carlos Estrada</h1>
+<h4>Developer & Designer</h4>
+
+<ul>
+	{% for project in site.projects %}
+		<li>
+			<a href="{{ project.url }}">{{ project.title }}: {{ project.excerpt }}</a>
+		</li>
+	{% endfor %}
+</ul>

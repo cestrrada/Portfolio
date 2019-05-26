@@ -1,4 +1,8 @@
 title: Carlos Estrada
+permalink: /:slug
+
+sass:
+  style: compressed
 
 social:
   twitter: https://twitter.com/cestrrada
@@ -6,3 +10,8 @@ social:
   behance: https://behance.net/cestrrada
   linkedin: https://linkedin.com/in/cestrrada
   email: mailto:cestrrada@gmail.com
+  
+collections:
+  projects:
+    permalink: /:slug
+    output: true
