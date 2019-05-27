@@ -20,21 +20,19 @@ title: Home
 		{% assign projects = site.projects | sort: 'date' | reverse %}
 		{% for project in projects %}
 			<div class="col-12 col-md-6 col-lg-4 my-2">
-				<div class="card-deck">
-					<a href="{{ project.url }}" class="card-link">
-						<div class="card card-hover bg-dark-accent">
-							{% if project.featured != null %}
-							<img src="{{ site.assets.img | append: project.featured }}" 
-							class="card-img-top" alt="{{ project.title }} featured image">
-							{% else %}
-							<div class="card-body">
-								<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
-								<p class="card-text text-muted">{{ project.excerpt }}</p>
-							</div>
-							{% endif %}
+				<a href="{{ project.url }}" class="card-link">
+					<div class="card card-hover bg-dark-accent">
+						{% if project.featured != null %}
+						<div style="background-image: url({{ site.assets.img | append: project.featured }})" 
+						class="project-cover"></div>
+						{% else %}
+						<div class="card-body">
+							<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
+							<p class="card-text text-muted">{{ project.excerpt }}</p>
 						</div>
-					</a>
-				</div>
+						{% endif %}
+					</div>
+				</a>
 			</div>
 		{% endfor %}
 	</div>

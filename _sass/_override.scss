@@ -16,3 +16,21 @@ $minus-opacity: .85;
 		@include ce-button($value);
 	}
 }
+
+code {
+	color: $success;
+	background-color: transparentize($success, 0.8);
+	padding: .2em .4em;
+	border-radius: .2rem;
+}
+
+article a {
+	color: lighten($link-color, 15%);
+	border-radius: .2rem;
+	font-weight: bold;
+	
+	&:hover {
+		transition: .25s;
+		color: lighten($link-color, 5%);;
+	}
+}
