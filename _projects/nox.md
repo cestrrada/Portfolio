@@ -4,10 +4,19 @@ title: Nox
 date: May 25, 2019
 category: Design
 
+buttons:
+  - name: Download on Packix
+    url: https://repo.packix.com/package/com.caestrada.nox/
+    color: btn-success
+    icon: fas fa-download
+  - name: Request Icons
+    url: https://docs.google.com/forms/d/e/1FAIpQLSfIXChyA7BPcebHI3d-xsoy82Kc4smC8Yym3-hqiRHj-wdnAw/viewform
+    color: btn-primary
+    icon: fas fa-paper-plane
+
 version: 2.0
-github: https://github.com/repo
-excerpt: A dark iOS theme made for the Anemone and Snowboard theming engines, featuring over 300 icons.
 featured: nox/featured.jpg
+excerpt: A dark iOS theme made for the Anemone and Snowboard theming engines, featuring over 300 icons.
 ---
 
 ### Overview
