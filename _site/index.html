@@ -4,14 +4,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Home | Carlos Estrada</title>
-		<link rel="stylesheet" href="/resources/css/styles.css">
-		<link rel="stylesheet" href="/vendors/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="/assets/css/styles.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<script src="/vendors/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
 	</head>
 	<body class="bg-dark text-light">
-		<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+		<nav class="navbar navbar-expand-md navbar-dark bg-transparent fixed-top">
 	<div class="container">
 		<a class="navbar-brand" href="http://localhost:4000">
 		<span class="rounded-circle bg-danger svg-light logo-nav"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
@@ -47,70 +46,68 @@
 		</div>
 	</div>
 </nav>
-		<div class="container my-2">
-			<div id="site-info" class="text-center text-md-left my-4">
-	<span class="logo-80 svg-light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+		<section id="site-info" class="bg-dark-accent text-center pt-5">
+	<div class="container pt-5 pb-4">
+		<span class="logo-80 svg-light"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
 	<path d="M518.48,162.06c-197.65-3.62-360,160-356.42,359.11,3,169,124.13,309,283.71,339.82,34.4,6.64,66.23-20.19,66.23-55.48h0a56.42,56.42,0,0,0-45.65-55.44,235.76,235.76,0,0,1-122.64-65.86,241.08,241.08,0,0,1,0-339.13,236.75,236.75,0,0,1,336.58,0,238.72,238.72,0,0,1,62.87,112.16.79.79,0,0,1-.77,1H568c-30.93,0-56,25.26-56,56.43h0c0,31.16,25.07,56.42,56,56.42H806.12A56,56,0,0,0,862,515.22v-.57C862,322.06,708.79,165.54,518.48,162.06Z"/>
 </svg></span>
-	<h1 class="site-title">Carlos Estrada</h1>
-	<h6 class="site-tagline text-uppercase text-muted">Developer & Designer</h6>
-	
-		<a href="https://twitter.com/cestrrada" target="_blank" class="social-icons mx-2 text-decoration-none">
-			<i class="fab fa-twitter text-light"></i>
-		</a>
-	
-		<a href="https://github.com/cestrrada" target="_blank" class="social-icons mx-2 text-decoration-none">
-			<i class="fab fa-github text-light"></i>
-		</a>
-	
-		<a href="https://behance.net/cestrrada" target="_blank" class="social-icons mx-2 text-decoration-none">
-			<i class="fab fa-behance text-light"></i>
-		</a>
-	
-		<a href="https://linkedin.com/in/cestrrada" target="_blank" class="social-icons mx-2 text-decoration-none">
-			<i class="fab fa-linkedin-in text-light"></i>
-		</a>
-	
-		<a href="mailto:cestrrada@gmail.com" target="_blank" class="social-icons mx-2 text-decoration-none">
-			<i class="fas fa-envelope text-light"></i>
-		</a>
-	
-</div>
+		<h1 class="font-weight-bold">Carlos Estrada</h1>
+		<h6 class="text-header-sm">Developer & Designer</h6>
+		
+			<a href="https://twitter.com/cestrrada" target="_blank" class="social-icons mx-2 text-decoration-none">
+				<i class="fab fa-twitter text-light"></i>
+			</a>
+		
+			<a href="https://github.com/cestrrada" target="_blank" class="social-icons mx-2 text-decoration-none">
+				<i class="fab fa-github text-light"></i>
+			</a>
+		
+			<a href="https://behance.net/cestrrada" target="_blank" class="social-icons mx-2 text-decoration-none">
+				<i class="fab fa-behance text-light"></i>
+			</a>
+		
+			<a href="https://linkedin.com/in/cestrrada" target="_blank" class="social-icons mx-2 text-decoration-none">
+				<i class="fab fa-linkedin-in text-light"></i>
+			</a>
+		
+			<a href="mailto:cestrrada@gmail.com" target="_blank" class="social-icons mx-2 text-decoration-none">
+				<i class="fas fa-envelope text-light"></i>
+			</a>
+		
+	</div>
+</section>
 
-<div class="row">
-	
-	
-		<div class="col-12 col-md-6 col-lg-4 my-2">
-			<a href="/nox" class="card-link">
-			<div class="card card-hover bg-dark-accent">
-				
-				<img src="/resources/img/project/nox/featured.jpg" class="card-img-top" alt="Nox featured image">
-				
-				<div class="card-body">
-					<h3 class="card-title">Nox</h3>
-					<p class="card-text text-muted">A dark iOS theme made for the Anemone and Snowboard theming engines, featuring over 300 icons.</p>
-					<p class="card-text"><small class="text-muted">May 25, 2019</small></p>
+<section id="portfolio" class="container">
+	<div class="row">
+		
+		
+			<div class="col-12 col-md-6 col-lg-4 my-2">
+				<div class="card-deck">
+					<a href="/nox" class="card-link">
+						<div class="card card-hover bg-dark-accent">
+							
+							<img src="/assets/img/nox/featured.jpg" 
+							class="card-img-top" alt="Nox featured image">
+							
+						</div>
+					</a>
 				</div>
 			</div>
-			</a>
-		</div>
-	
-		<div class="col-12 col-md-6 col-lg-4 my-2">
-			<a href="/omega" class="card-link">
-			<div class="card card-hover bg-dark-accent">
-				
-				<img src="/resources/img/project/omega/featured.jpg" class="card-img-top" alt="Omega Airlines featured image">
-				
-				<div class="card-body">
-					<h3 class="card-title">Omega Airlines</h3>
-					<p class="card-text text-muted">An Android pseudo-application that allows users to book and manage their flight reservations.</p>
-					<p class="card-text"><small class="text-muted">December 16, 2018</small></p>
+		
+			<div class="col-12 col-md-6 col-lg-4 my-2">
+				<div class="card-deck">
+					<a href="/omega" class="card-link">
+						<div class="card card-hover bg-dark-accent">
+							
+							<img src="/assets/img/omega/featured.jpg" 
+							class="card-img-top" alt="Omega Airlines featured image">
+							
+						</div>
+					</a>
 				</div>
 			</div>
-			</a>
-		</div>
-	
-</div>
-		</div>
+		
+	</div>
+</section>
 	</body>
 </html>

@@ -2,33 +2,40 @@
 layout: default
 title: Home
 ---
-<div id="site-info" class="text-center text-md-left my-4">
-	<span class="logo-80 svg-light">{% include logo.svg %}</span>
-	<h1 class="site-title">Carlos Estrada</h1>
-	<h6 class="site-tagline text-uppercase text-muted">Developer & Designer</h6>
-	{% for social in site.social %}
-		<a href="{{ social.url }}" target="_blank" class="social-icons mx-2 text-decoration-none">
-			<i class="{{ social.icon }} text-light"></i>
-		</a>
-	{% endfor %}
-</div>
+<section id="site-info" class="bg-dark-accent text-center pt-5">
+	<div class="container pt-5 pb-4">
+		<span class="logo-80 svg-light">{% include logo.svg %}</span>
+		<h1 class="font-weight-bold">Carlos Estrada</h1>
+		<h6 class="text-header-sm">Developer & Designer</h6>
+		{% for social in site.social %}
+			<a href="{{ social.url }}" target="_blank" class="social-icons mx-2 text-decoration-none">
+				<i class="{{ social.icon }} text-light"></i>
+			</a>
+		{% endfor %}
+	</div>
+</section>
 
-<div class="row">
-	{% assign projects = site.projects | sort: 'date' | reverse %}
-	{% for project in projects %}
-		<div class="col-12 col-md-6 col-lg-4 my-2">
-			<a href="{{ project.url }}" class="card-link">
-			<div class="card card-hover bg-dark-accent">
-				{% if project.featured != null %}
-				<img src="{{ project.featured }}" class="card-img-top" alt="{{ project.title }} featured image">
-				{% endif %}
-				<div class="card-body">
-					<h3 class="card-title">{{ project.title }}</h3>
-					<p class="card-text text-muted">{{ project.excerpt }}</p>
-					<p class="card-text"><small class="text-muted">{{ project.date | date: '%B %d, %Y'}}</small></p>
+<section id="portfolio" class="container">
+	<div class="row">
+		{% assign projects = site.projects | sort: 'date' | reverse %}
+		{% for project in projects %}
+			<div class="col-12 col-md-6 col-lg-4 my-2">
+				<div class="card-deck">
+					<a href="{{ project.url }}" class="card-link">
+						<div class="card card-hover bg-dark-accent">
+							{% if project.featured != null %}
+							<img src="{{ site.assets.img | append: project.featured }}" 
+							class="card-img-top" alt="{{ project.title }} featured image">
+							{% else %}
+							<div class="card-body">
+								<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
+								<p class="card-text text-muted">{{ project.excerpt }}</p>
+							</div>
+							{% endif %}
+						</div>
+					</a>
 				</div>
 			</div>
-			</a>
-		</div>
-	{% endfor %}
-</div>
+		{% endfor %}
+	</div>
+</section>
