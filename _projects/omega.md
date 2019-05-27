@@ -43,4 +43,4 @@ I had also realized that Recycler Views were going to be a large part of the app
 - Requires Android 7.0 Nougat (API 24) or higher.
 
 ##### Credits
-[Airplane](https://thenounproject.com/term/airplane/100813) by Simon Child, The Noun Project.
+[Airplane](https://thenounproject.com/term/airplane/100813){:target="_blank"} by Simon Child, The Noun Project.
