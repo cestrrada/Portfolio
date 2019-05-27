@@ -1,0 +1,19 @@
+.svg-light svg path {
+	fill: white;
+}
+
+.svg-dark svg path {
+	fill: theme-color("dark");
+}
+
+.logo-nav svg {
+	height: 40px;
+}
+
+.logo-80 svg {
+	height: 80px;
+}
+
+.logo-100 svg {
+	height: 100%;
+}

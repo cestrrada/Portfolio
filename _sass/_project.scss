@@ -1,0 +1,27 @@
+#content {
+	margin-top: -7rem;
+}
+
+.project-bg {
+	background-size: cover;
+	background-position: center;
+	padding: 8em;
+	padding-top: 10em;
+}
+
+.project-img-container {
+	overflow-x: scroll;
+	width: 100%;
+	white-space: nowrap;
+	
+	.project-img {
+		display: inline-block;
+		max-width: 100%;
+		max-height: 400px;
+		margin: 0 1em;
+		border-radius: .5rem !important;
+		
+		&:first-child { margin-left: 0; }
+		&:last-child { margin-right: 0; }
+	}
+}
