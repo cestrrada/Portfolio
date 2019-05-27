@@ -1,8 +1,11 @@
 ---
 layout: project
 title: Nox
-category: Design
 date: May 25, 2019
+category: Design
+
+version: 2.0
+github: https://github.com/repo
 excerpt: A dark iOS theme made for the Anemone and Snowboard theming engines, featuring over 300 icons.
 featured: nox/featured.jpg
 ---
