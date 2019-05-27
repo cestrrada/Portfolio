@@ -21,15 +21,29 @@
 					<div id="project-info" class="mb-4 text-center">
 						<small class="text-header-sm">{{ page.category }}</small>
 						<h1 class="display-4 mb-0">{{ page.title }}</h1>
-						{% if page.github %}
-							<a href="{{ page.github }}" class="btn btn-primary">GitHub</a>
-						{% endif %}
 						<p class="text-muted">
 						{% if page.version %}
 							Version: {{ page.version }}<br>
 						{% endif %}
 						Updated: {{ page.date | date: '%B %d, %Y'}}
 						</p>
+						
+						{% for btn in page.buttons %}
+							<a href="{{ btn.url }}" target="_blank" class="btn {{ btn.color }} rounded-pill mx-2">
+								<i class="{{ btn.icon }} mr-2"></i>
+								{% if btn.name == "github" %}
+									{{ btn.url | split: "https://github.com/" }}
+								{% else %}
+									{{ btn.name }}
+								{% endif %}
+							</a>
+						{% endfor %}
+						
+						{% if page.github %}
+							<a href="{{ page.github }}" target="_blank" class="btn btn-outline-light rounded-pill mx-2">
+								<i class="fab fa-github mr-2"></i>{{ page.github | split: "https://github.com/" }}
+							</a>
+						{% endif %}
 					</div>
 					
 					{{ content }}
