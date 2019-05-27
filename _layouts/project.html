@@ -29,7 +29,7 @@
 						</p>
 						
 						{% for btn in page.buttons %}
-							<a href="{{ btn.url }}" target="_blank" class="btn {{ btn.color }} rounded-pill mx-2">
+							<a href="{{ btn.url }}" target="_blank" class="btn {{ btn.color }} rounded-pill m-2">
 								<i class="{{ btn.icon }} mr-2"></i>
 								{% if btn.name == "github" %}
 									{{ btn.url | split: "https://github.com/" }}
