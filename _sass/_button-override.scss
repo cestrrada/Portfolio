@@ -1,0 +1,18 @@
+$minus-opacity: .85;
+
+@mixin ce-button($color) {
+	color: $color !important;
+	background-color: transparentize($color, $minus-opacity) !important;
+	border: 0 !important;
+	border-radius: .5rem !important;
+	
+	&:hover {
+		background-color: transparentize($color, $minus-opacity - 0.25) !important;
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.btn-#{$color} {
+		@include ce-button($value);
+	}
+}

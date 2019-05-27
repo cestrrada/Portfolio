@@ -1,4 +1,6 @@
-@import "bootstrap";
+@import "theme";
+@import "bootstrap/bootstrap";
+@import "button-override";
 @import "components";
 @import "logo";
 @import "project";
@@ -22,6 +24,6 @@
 	}
 }
 
-#portfolio {
+main {
 	margin-top: -7rem;
 }

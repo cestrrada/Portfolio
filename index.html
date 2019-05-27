@@ -2,7 +2,7 @@
 layout: default
 title: Home
 ---
-<section id="site-info" class="bg-dark-accent text-center pt-5">
+<header id="site-info" class="bg-dark-accent text-center pt-5">
 	<div class="container pt-5 pb-4">
 		<span class="logo-80 svg-light">{% include logo.svg %}</span>
 		<h1 class="font-weight-bold">Carlos Estrada</h1>
@@ -13,9 +13,9 @@ title: Home
 			</a>
 		{% endfor %}
 	</div>
-</section>
+</header>
 
-<section id="portfolio" class="container">
+<main id="portfolio" class="container">
 	<div class="row">
 		{% assign projects = site.projects | sort: 'date' | reverse %}
 		{% for project in projects %}
@@ -38,4 +38,4 @@ title: Home
 			</div>
 		{% endfor %}
 	</div>
-</section>
+</main>

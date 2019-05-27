@@ -14,7 +14,7 @@
 	{% assign featured = site.assets.img | append: page.featured %}
 	<header class="project-bg" style="background-image: url({{ featured }});"></header>
 		
-	<section id="content" class="container">
+	<main id="project" class="container">
 		<div class="row mb-5">
 			<div class="col-12 col-lg-8 card card-shadow bg-dark-accent mx-auto mb-5">
 				<div class="card-body">
@@ -29,7 +29,7 @@
 						</p>
 						
 						{% for btn in page.buttons %}
-							<a href="{{ btn.url }}" target="_blank" class="btn {{ btn.color }} rounded-pill m-2">
+							<a href="{{ btn.url }}" target="_blank" class="btn {{ btn.color }} btn-primary m-2">
 								<i class="{{ btn.icon }} mr-2"></i>
 								{% if btn.name == "github" %}
 									{{ btn.url | split: "https://github.com/" }}
@@ -40,11 +40,12 @@
 						{% endfor %}
 						
 						{% if page.github %}
-							<a href="{{ page.github }}" target="_blank" class="btn btn-outline-light rounded-pill mx-2">
+							<a href="{{ page.github }}" target="_blank" class="btn btn-outline-light mx-2">
 								<i class="fab fa-github mr-2"></i>{{ page.github | split: "https://github.com/" }}
 							</a>
 						{% endif %}
 					</div>
+					
 					
 					{{ content }}
 					
@@ -59,6 +60,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</main>
 </body>
 </html>
