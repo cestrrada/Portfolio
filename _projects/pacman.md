@@ -15,7 +15,7 @@ buttons:
     icon: fab fa-app-store
   - name: Download (Windows)
     url: https://github.com/estrrada/PAC-MAN/files/1582421/PACMAN-Windows.zip
-    color: btn-success
+    color: btn-warning
     icon: fab fa-windows
 
 version: 2.0

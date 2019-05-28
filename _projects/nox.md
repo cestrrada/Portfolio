@@ -8,7 +8,7 @@ buttons:
   - name: Download on Packix
     url: https://repo.packix.com/package/com.caestrada.nox/
     color: btn-success
-    icon: fas fa-download
+    icon: fas fa-cube
   - name: Request Icons
     url: https://docs.google.com/forms/d/e/1FAIpQLSfIXChyA7BPcebHI3d-xsoy82Kc4smC8Yym3-hqiRHj-wdnAw/viewform
     color: btn-primary
