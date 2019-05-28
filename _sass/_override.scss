@@ -34,3 +34,15 @@ article a {
 		color: lighten($link-color, 5%);;
 	}
 }
+
+.display-5 {
+	font-size: 3rem;
+	font-weight: 300;
+	line-height: 1.2;
+}
+
+h1, h2, h3, h4 {
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+}

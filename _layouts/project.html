@@ -10,58 +10,62 @@
 		<script src="/vendors/bootstrap/js/bootstrap.min.js" charset="utf-8"></script>
 	</head>
 	<body class="bg-dark text-light">
-	{% include navigation.html %}
-	{% assign featured = site.assets.img | append: page.featured %}
-	<header class="project-bg" style="background-image: url({{ featured }});"></header>
-		
-	<main id="project" class="container">
-		<div class="row">
-			<div class="col-12 col-lg-8 card card-shadow bg-dark-accent mx-auto">
-				<div class="card-body">
-					<div id="project-info" class="mb-4 text-center">
-						<small class="text-header-sm">{{ page.category }}</small>
-						<h1 class="display-4 mb-0">{{ page.title }}</h1>
-						<p class="text-muted">
-						{% if page.version %}
-							Version: {{ page.version }}<br>
-						{% endif %}
-						Updated: {{ page.date | date: '%B %d, %Y'}}
-						</p>
-						
-						{% for btn in page.buttons %}
-							<a href="{{ btn.url }}" target="_blank" class="btn {{ btn.color }} btn-primary m-2">
-								<i class="{{ btn.icon }} mr-2"></i>
-								{% if btn.name == "github" %}
-									{{ btn.url | split: "https://github.com/" }}
-								{% else %}
-									{{ btn.name }}
+		{% include navigation.html %}
+		{% assign featured = site.assets.img | append: page.featured %}
+		<header class="project-bg" style="background-image: url({{ featured }});"></header>
+			
+		<main id="project" class="container">
+			<div class="row">
+				<div class="col-12 col-lg-8 mx-auto">
+				
+					<div class="card card-shadow bg-dark-accent">
+						<div class="card-body">
+							<div id="project-info" class="mb-4 text-center">
+								<small class="text-header-sm">{{ page.category }}</small>
+								<h1 class="display-4 mb-0">{{ page.title }}</h1>
+								<p class="text-muted">
+								{% if page.version %}
+									Version: {{ page.version }}<br>
 								{% endif %}
-							</a>
-						{% endfor %}
-						
-						{% if page.github %}
-							<a href="{{ page.github }}" target="_blank" class="btn btn-outline-light mx-2">
-								<i class="fab fa-github mr-2"></i>{{ page.github | split: "https://github.com/" }}
-							</a>
-						{% endif %}
+								Updated: {{ page.date | date: '%B %d, %Y'}}
+								</p>
+								
+								{% for btn in page.buttons %}
+									<a href="{{ btn.url }}" target="_blank" class="btn {{ btn.color }} btn-primary m-2">
+										<i class="{{ btn.icon }} mr-2"></i>
+										{% if btn.name == "github" %}
+											{{ btn.url | split: "https://github.com/" }}
+										{% else %}
+											{{ btn.name }}
+										{% endif %}
+									</a>
+								{% endfor %}
+								
+								{% if page.github %}
+									<a href="{{ page.github }}" target="_blank" class="btn btn-outline-light mx-2">
+										<i class="fab fa-github mr-2"></i>{{ page.github | split: "https://github.com/" }}
+									</a>
+								{% endif %}
+							</div>
+							
+							<article>
+							{{ content }}
+							</article>
+							
+							<div class="project-img-container mt-4">
+								{% assign images = site.assets.img | append: page.slug | append: "/" %}
+								{% for image in site.static_files %}
+									{% if image.path contains images and image.path != featured %}
+										<img class="project-img" src="{{ image.path }}"/>
+									{% endif %}
+								{% endfor %}
+							</div>
+						</div>
 					</div>
 					
-					<article>
-					{{ content }}
-					</article>
-					
-					<div class="project-img-container mt-4">
-						{% assign images = site.assets.img | append: page.slug | append: "/" %}
-						{% for image in site.static_files %}
-							{% if image.path contains images and image.path != featured %}
-								<img class="project-img" src="{{ image.path }}"/>
-							{% endif %}
-						{% endfor %}
-					</div>
-				</div>
-			</div>
-		</div>
-	</main>
-	{% include footer.html %}
-</body>
+				</div><!-- col -->
+			</div><!-- row -->
+		</main>
+		{% include footer.html %}
+	</body>
 </html>
