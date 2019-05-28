@@ -1,0 +1,8 @@
+<div class="card card-hover bg-dark-accent">
+	<article class="card-body">
+		<img src="{{ site.assets.img | append: 'site/carlos-estrada.jpg' }}" 
+		class="d-block mx-auto profile-img rounded-circle mt-3 mb-4">
+		{% capture my_include %}{% include bio.md %}{% endcapture %}
+		{{ my_include | markdownify }}
+	</article>
+</div>

@@ -16,24 +16,37 @@ title: Home
 </header>
 
 <main id="portfolio" class="container">
-	<div class="row">
-		{% assign projects = site.projects | sort: 'date' | reverse %}
-		{% for project in projects %}
-			<div class="col-12 col-md-6 col-lg-4 my-2">
-				<a href="{{ project.url }}" class="card-link">
-					<div class="card card-hover bg-dark-accent">
-						{% if project.featured != null %}
-						<div style="background-image: url({{ site.assets.img | append: project.featured }})" 
-						class="project-cover"></div>
-						{% else %}
-						<div class="card-body">
-							<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
-							<p class="card-text text-muted">{{ project.excerpt }}</p>
-						</div>
-						{% endif %}
+	<div class="row my-2">
+	
+		<div class="col-12 col-lg-8">
+		
+			<div class="row">
+			
+				{% assign projects = site.projects | sort: 'date' | reverse %}
+				{% for project in projects %}
+					<div class="col-12 col-lg-6 mb-4">
+						<a href="{{ project.url }}" class="card-link">
+							<div class="card card-hover bg-dark-accent">
+								{% if project.featured != null %}
+								<div style="background-image: url({{ site.assets.img | append: project.featured }})" 
+								class="project-cover"></div>
+								{% else %}
+								<div class="card-body">
+									<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
+									<p class="card-text text-muted">{{ project.excerpt }}</p>
+								</div>
+								{% endif %}
+							</div>
+						</a>
 					</div>
-				</a>
+				{% endfor %}
+			
 			</div>
-		{% endfor %}
+		</div>
+		
+		<div class="col-12 col-lg-4">
+			{% include about.html %}
+		</div>
+		
 	</div>
 </main>

@@ -34,3 +34,14 @@
 main {
 	margin-top: -7rem;
 }
+
+.profile-img {
+	width: 128px;
+	height: 128px;
+	transition: .5s;
+	
+	&:hover, &:active, &:focus {
+		transition: .5s;
+		box-shadow: 0 0 0 10px rgba(mix(color-yiq($light), $light, 15%), .5);
+	}
+}
