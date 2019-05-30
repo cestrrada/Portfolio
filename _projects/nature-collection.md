@@ -5,7 +5,8 @@ date: June 13, 2018
 category: Design
 
 featured: nature-collection/featured.jpg
-description: A two-player light racer game written in C++.
+description: A set of graphic artwork created in Adobe Illustrator, featuring scenic locations like Yosemite National Park, Mt. Fuji, and more.
+keywords: nature collection design yosemite fuji landscapes california adobe illustrator
 ---
 
 ### Overview

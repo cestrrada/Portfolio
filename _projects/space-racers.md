@@ -17,6 +17,7 @@ buttons:
 version: 1.0
 featured: space-racers/featured.jpg
 description: A two-player light racer game written in C++.
+keywords: games light racer cpp development design windows software
 ---
 
 ### Overview

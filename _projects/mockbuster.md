@@ -16,6 +16,7 @@ buttons:
 
 featured: mockbuster/featured.png
 description: A website for browsing, purchasing and maintaining a movie database.
+keywords: website movies database administrator shopping cart api backend frontend development design
 ---
 
 ### Overview

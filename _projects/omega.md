@@ -13,6 +13,7 @@ buttons:
 version: 1.0
 featured: omega/featured.jpg
 description: An Android pseudo-application that allows users to book and manage their flight reservations.
+keywords: software design android application flight reservations airline java development csumb
 ---
 
 ### Overview

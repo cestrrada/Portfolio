@@ -13,6 +13,7 @@ buttons:
 version: 1.0
 featured: meme-generator/featured.jpg
 description: A Python-based GUI for creating memes using custom images and captions.
+keywords: meme generator project csumb python gui software image gif
 ---
 
 ### Overview

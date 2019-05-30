@@ -21,6 +21,7 @@ buttons:
 version: 2.0
 featured: pacman/featured.jpg
 description: A PAC-MAN clone written in C++ using SFML.
+keywords: games pacman cpp sfml development design macos windows software
 ---
 
 ### Overview
