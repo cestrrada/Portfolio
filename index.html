@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 <header id="site-info" class="bg-dark-accent text-center pt-5">
-	<div class="container pt-5 pb-4">
+	<div class="container pb-5">
 		<span class="logo-80 svg-light">{% include logo.svg %}</span>
 		<h1 class="font-weight-bold">Carlos Estrada</h1>
 		<h6 class="text-header-sm">Developer & Designer</h6>
@@ -17,36 +17,31 @@ title: Home
 
 <main id="portfolio" class="container">
 	<div class="row my-2">
-	
-		<div class="col-12 col-lg-8">
-		
-			<div class="row">
 			
-				{% assign projects = site.projects | sort: 'date' | reverse %}
-				{% for project in projects %}
-					<div class="col-12 col-lg-6 mb-4">
-						<a href="{{ project.url }}" class="card-link">
-							<div class="card card-hover bg-dark-accent">
-								{% if project.featured != null %}
-								<div style="background-image: url({{ site.assets.img | append: project.featured }})" 
-								class="project-cover"></div>
-								{% else %}
-								<div class="card-body">
-									<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
-									<p class="card-text text-muted">{{ project.excerpt }}</p>
-								</div>
-								{% endif %}
-							</div>
-						</a>
+		{% assign projects = site.projects | sort: 'date' | reverse %}
+		{% for project in projects %}
+			<div class="col-12 col-lg-4 mb-4">
+				<a href="{{ project.url }}" class="card-link">
+					<div class="card card-hover bg-dark-accent">
+						{% if project.featured != null %}
+						<div style="background-image: url({{ site.assets.img | append: project.featured }})" 
+						class="project-cover"></div>
+						{% else %}
+						<div class="card-body">
+							<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
+							<p class="card-text text-muted">{{ project.excerpt }}</p>
+						</div>
+						{% endif %}
 					</div>
-				{% endfor %}
-			
+				</a>
 			</div>
-		</div>
+		{% endfor %}
 		
-		<div class="col-12 col-lg-4">
+	</div>
+	
+	<div class="row">
+		<div class="col-12 col-lg-6 mx-auto">
 			{% include about.html %}
 		</div>
-		
 	</div>
 </main>
