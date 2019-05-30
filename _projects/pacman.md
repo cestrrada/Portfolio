@@ -19,7 +19,7 @@ buttons:
     icon: fab fa-windows
 
 version: 2.0
-featured: pacman/featured.png
+featured: pacman/featured.jpg
 excerpt: A PAC-MAN clone written in C++ using SFML.
 ---
 
