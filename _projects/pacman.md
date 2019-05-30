@@ -20,7 +20,7 @@ buttons:
 
 version: 2.0
 featured: pacman/featured.jpg
-excerpt: A PAC-MAN clone written in C++ using SFML.
+description: A PAC-MAN clone written in C++ using SFML.
 ---
 
 ### Overview

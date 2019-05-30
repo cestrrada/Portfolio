@@ -5,7 +5,7 @@ date: June 13, 2018
 category: Design
 
 featured: nature-collection/featured.jpg
-excerpt: A two-player light racer game written in C++.
+description: A two-player light racer game written in C++.
 ---
 
 ### Overview

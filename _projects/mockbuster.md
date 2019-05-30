@@ -15,7 +15,7 @@ buttons:
     icon: fas fa-link
 
 featured: mockbuster/featured.png
-excerpt: A website for browsing, purchasing and maintaining a movie database.
+description: A website for browsing, purchasing and maintaining a movie database.
 ---
 
 ### Overview

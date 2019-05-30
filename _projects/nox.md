@@ -16,7 +16,7 @@ buttons:
 
 version: 2.0
 featured: nox/featured.jpg
-excerpt: A dark iOS theme made for the Anemone and Snowboard theming engines, featuring over 300 icons.
+description: A dark iOS theme made for the Anemone and Snowboard theming engines, featuring over 300 icons.
 ---
 
 ### Overview

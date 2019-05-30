@@ -12,7 +12,7 @@ buttons:
 
 version: 1.0
 featured: meme-generator/featured.jpg
-excerpt: A Python-based GUI for creating memes using custom images and captions.
+description: A Python-based GUI for creating memes using custom images and captions.
 ---
 
 ### Overview

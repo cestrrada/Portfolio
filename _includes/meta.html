@@ -1,0 +1,28 @@
+{% if page.title == "Home" %}
+	<title>{{ site.title }} | Developer & Designer</title>
+	<meta property="og:title" content="{{ site.title }} | Developer & Designer">
+{% else %}
+	<title>{{ page.title }} | {{ site.title }}</title>
+	<meta property="og:title" content="{{ page.title }} | {{ site.title }}">
+{% endif %}
+
+{% if page.description %}
+	<meta name="description" content="{{ page.description }}">
+	<meta property="og:description" content="{{ page.description }}">
+{% endif %}
+
+{% if page.keywords %}
+	<meta name="keywords" content="{{ page.keywords }}">
+{% endif %}
+
+{% if page.featured %}
+	{% assign featured = site.url | append: site.assets.img | append: page.featured %}
+	<meta property="og:image" content="{{ featured }}">
+{% endif %}
+
+<meta property="og:url" content="{{ site.url | append: page.url }}">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@cestrrada">
+
+<meta property="og:locale" content="en_US"/>

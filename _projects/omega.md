@@ -12,7 +12,7 @@ buttons:
 
 version: 1.0
 featured: omega/featured.jpg
-excerpt: An Android pseudo-application that allows users to book and manage their flight reservations.
+description: An Android pseudo-application that allows users to book and manage their flight reservations.
 ---
 
 ### Overview
