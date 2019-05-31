@@ -10,7 +10,7 @@ buttons:
     color: btn-light
     icon: fab fa-github
   - name: Website
-    url: https://mockbuster.caestrada.com
+    url: http://mockbuster.caestrada.com
     color: btn-info
     icon: fas fa-link
 
