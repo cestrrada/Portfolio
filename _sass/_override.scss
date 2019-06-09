@@ -25,13 +25,13 @@ code {
 }
 
 article a {
-	color: lighten($link-color, 15%);
+	color: lighten($link-color, 20%);
 	border-radius: .2rem;
-	font-weight: bold;
+	font-weight: 500;
 	
 	&:hover {
 		transition: .25s;
-		color: lighten($link-color, 5%);;
+		color: lighten($link-color, 10%);;
 	}
 }
 

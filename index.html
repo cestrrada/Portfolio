@@ -4,46 +4,68 @@ title: Home
 description: Carlos Estrada is a developer, designer, and computer science student at CSUMB concentrating in Software Engineering.
 featured: site/featured.jpg
 ---
-<header id="site-info" class="bg-dark-accent text-center pt-5">
-	<div class="container pb-5">
-		<span class="d-block logo-80 my-4 svg-light">{% include logo.svg %}</span>
-		<h1 class="font-weight-bold">Carlos Estrada</h1>
-		<h6 class="text-header-sm">Developer & Designer</h6>
-		{% for social in site.social %}
-			<a href="{{ social.url }}" class="social-icon mx-2 text-decoration-none" aria-label="{{ social.name }} link">
-				<i class="{{ social.icon }} text-light"></i>
-			</a>
-		{% endfor %}
-	</div>
-</header>
-
-<main id="portfolio" class="container">
-	<div class="row my-2">
-			
-		{% assign projects = site.projects | sort: 'date' | reverse %}
-		{% for project in projects %}
-			<div class="col-12 col-lg-4 mb-4">
-				<a href="{{ project.url }}" class="card-link" aria-label="{{ project.title }} – {{ project.category }} project">
-					<div class="card card-hover bg-dark-accent">
-						{% if project.featured != null %}
-						<div style="background-image: url({{ site.assets.img | append: project.featured }})" 
-						class="project-cover"></div>
-						{% else %}
-						<div class="card-body">
-							<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
-							<p class="card-text text-muted">{{ project.excerpt }}</p>
-						</div>
-						{% endif %}
-					</div>
-				</a>
-			</div>
-		{% endfor %}
-		
-	</div>
+<main>
+	<article id="home">
 	
-	<div class="row">
-		<div class="col-12 col-lg-6 mx-auto">
-			{% include about.html %}
-		</div>
-	</div>
+		<section id="site-info" class="bg-dark-accent text-center pt-5">
+			<div class="container">
+				<span class="d-block logo-80 my-4 svg-light">{% include logo.svg %}</span>
+				<h1 class="font-weight-bold">Carlos Estrada</h1>
+				<h5 class="text-muted font-weight-bold" itemProp="description">Developer & Designer</h5>
+				{% for social in site.social %}
+					<a href="{{ social.url }}" class="social-icon mx-2 text-decoration-none" aria-label="{{ social.name }} link">
+						<i class="{{ social.icon }} text-light"></i>
+					</a>
+				{% endfor %}
+				
+				<div class="row mt-4 mb-2 text-left">
+					<div class="col-12 col-md-5 col-lg-5 mx-auto">
+						{% capture my_include %}{% include background.md %}{% endcapture %}
+						{{ my_include | markdownify }}
+					</div>
+					<div class="col-12 col-md-5 col-lg-5 mx-auto">
+						{% capture my_include %}{% include experience.md %}{% endcapture %}
+						{{ my_include | markdownify }}
+						<a href="{{ site.assets.files | append: 'resume-02-2019.pdf' }}" class="btn btn-block btn-info">
+							<i class="fas fa-file-download mr-2"></i>Download Resume
+						</a>
+					</div>
+				</div>
+			
+			</div>
+		</section>
+		
+		<section id="portfolio" class="container">
+			<div class="row mb-3">
+				<div class="col-12">
+					<h2 class="m-0 font-weight-bold">Portfolio</h2>
+					<h5 class="m-0 text-muted font-weight-bold">{{ site.projects | size }} Projects</h5>
+				</div>
+			</div>
+
+			<div class="row">
+						
+				{% assign projects = site.projects | sort: 'date' | reverse %}
+				{% for project in projects %}
+					<div class="col-12 col-md-6 col-lg-4 mb-4">
+						<div class="card card-hover bg-dark-accent">
+							<a href="{{ project.url }}" aria-label="{{ project.title }} – {{project.category }}" class="card-link">
+								<div style="background-image: url({{ site.assets.img | append: project.featured }})" class="project-cover"></div>
+							</a>
+								
+							<div class="card-body m-3">
+								<a href="{{ project.url }}" aria-label="{{ project.title }} – {{project.category }}" class="card-link">
+									<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
+								</a>
+								<p class="card-text text-muted">{{ project.description }}</p>
+							</div>
+							</a>
+						</div>
+					</div>
+				{% endfor %}
+				
+			</div>
+		</section>
+		
+	</article>
 </main>
