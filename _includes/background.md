@@ -1,3 +1,5 @@
+### About
+
 **Carlos Estrada** is a Computer Science student at [CSU Monterey Bay](https://csumb.edu/) concentrating in Software Engineering.
 
 During his free time, Carlos takes on freelance design projects, such as designing logos and websites for on-campus clubs and creating [iOS themes](/nox) for jailbroken iPhone users.

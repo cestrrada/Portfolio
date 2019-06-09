@@ -17,33 +17,13 @@ featured: site/featured.jpg
 						<i class="{{ social.icon }} text-light"></i>
 					</a>
 				{% endfor %}
-				
-				<div class="row mt-4 mb-2 text-left">
-					<div class="col-12 col-md-5 col-lg-5 mx-auto">
-						{% capture my_include %}{% include background.md %}{% endcapture %}
-						{{ my_include | markdownify }}
-					</div>
-					<div class="col-12 col-md-5 col-lg-5 mx-auto">
-						{% capture my_include %}{% include experience.md %}{% endcapture %}
-						{{ my_include | markdownify }}
-						<a href="{{ site.assets.files | append: 'resume-02-2019.pdf' }}" class="btn btn-block btn-info">
-							<i class="fas fa-file-download mr-2"></i>Download Resume
-						</a>
-					</div>
-				</div>
 			
 			</div>
 		</section>
 		
 		<section id="portfolio" class="container">
-			<div class="row mb-3">
-				<div class="col-12">
-					<h2 class="m-0 font-weight-bold">Portfolio</h2>
-					<h5 class="m-0 text-muted font-weight-bold">{{ site.projects | size }} Projects</h5>
-				</div>
-			</div>
 
-			<div class="row">
+			<div class="row mt-5">
 						
 				{% assign projects = site.projects | sort: 'date' | reverse %}
 				{% for project in projects %}
@@ -52,18 +32,36 @@ featured: site/featured.jpg
 							<a href="{{ project.url }}" aria-label="{{ project.title }} – {{project.category }}" class="card-link">
 								<div style="background-image: url({{ site.assets.img | append: project.featured }})" class="project-cover"></div>
 							</a>
-								
-							<div class="card-body m-2">
-								<a href="{{ project.url }}" aria-label="{{ project.title }} – {{project.category }}" class="card-link">
-									<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
-								</a>
-								<p class="card-text text-muted">{{ project.description }}</p>
-							</div>
-							</a>
 						</div>
 					</div>
 				{% endfor %}
 				
+			</div>
+		</section>
+
+		<section id="bio" class="container">
+			<div class="row mb-2">
+				<div class="col-12 col-md-6 mb-4">
+					<div class="card card-hover bg-dark-accent p-2">
+						<div class="card-body p-4 p-md-5">
+							{% capture my_include %}{% include background.md %}{% endcapture %}
+							{{ my_include | markdownify }}
+						</div>
+					</div>
+				</div>	
+				
+				<div class="col-12 col-md-6">
+					<div class="card card-hover bg-dark-accent p-2">
+						<div class="card-body p-4 p-md-5">
+							{% capture my_include %}{% include experience.md %}{% endcapture %}
+							{{ my_include | markdownify }}
+							<a href="{{ site.assets.files | append: 'resume-02-2019.pdf' }}" class="btn btn-block btn-info">
+								<i class="fas fa-file-download mr-2"></i>Download Resume
+							</a>
+						</div>
+					</div>
+				</div>
+							
 			</div>
 		</section>
 		
