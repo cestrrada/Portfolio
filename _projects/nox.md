@@ -25,14 +25,23 @@ keywords: ios theme dark mod anemone snowboard icons applications design
 Nox is an iOS theme made for the Anemone and Snowboard theming engines. Featuring pure black icons, Nox is perfect for users with OLED displays looking for a complete Dark Mode experience without having to sacrifice the stock iOS look and feel.
 
 #### Features
-- 215 Home Screen icons
-- 25 alternate icons
+- 260 Home Screen icons
+- 30 alternate icons
 - Black notification badges
-- Settings app (Anemone only):
-	- App Store icons
-	- System icons
-	- Tweak icons
+- Settings icons
+- 40 General Purpose icons **(SnowBoard only)**
+
+
+#### General Purpose Icons
+Nox's general purpose icons are made to give users more choices for their unthemed apps in between updates. To use general purpose icons, you must be using SnowBoard. ***This will not work with Anemone 3 at the moment***, as Anemone doesn't support alternate icons anymore. Using SnowBoard's alternate icon picker, tap on "All Icons" and in the search bar, type in "NOX-" to see all icons or type in a keyword like "music" or "transportation".
 
 #### Complete Your Setup
 - [NoctisXI](https://repo.packix.com/package/com.laughingquoll.noctisxi/) by LaughingQuoll
 - [Eclipse X (iOS 11)](https://repo.packix.com/package/com.laughingquoll.noctisxi/) by Guillermo Morán
+
+#### Requests
+If you have any additional icons that you’d like themed, you can make up to 10 requests on the Google Form linked above.
+
+
+#### Refunds
+After purchasing this item on Packix, you have 7 days to request a refund, no questions asked. Any request made after that, regardless of the reason, will be declined.
