@@ -33,6 +33,12 @@ assets:
   files: assets/files/
     
 # Project Settings
+plugins:
+  - jekyll-target-blank
+
+target-blank:
+  noreferrer: false
+    
 sass:
   style: compressed
   

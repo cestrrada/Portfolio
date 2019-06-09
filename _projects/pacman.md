@@ -39,5 +39,5 @@ Built using the Simple and Fast Multimedia Library (SFML) and modeled after the 
 - Represent the world with tiles and load mazes from text files.
 
 #### Credits
-- [AnimatedSprite](https://github.com/SFML/SFML/wiki/Source:-AnimatedSprite){:target="_blank"} by Maximilian Wagenbach.
-- [Simple Collision Detection for SFML 2](https://github.com/SFML/SFML/wiki/Source:-Simple-Collision-Detection-for-SFML-2){:target="_blank"} by Nick Koirala and ahnonay.
+- [AnimatedSprite](https://github.com/SFML/SFML/wiki/Source:-AnimatedSprite) by Maximilian Wagenbach.
+- [Simple Collision Detection for SFML 2](https://github.com/SFML/SFML/wiki/Source:-Simple-Collision-Detection-for-SFML-2) by Nick Koirala and ahnonay.

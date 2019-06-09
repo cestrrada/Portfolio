@@ -18,7 +18,7 @@ keywords: meme generator project csumb python gui software image gif
 
 ### Overview
 
-Meme Generator is a CST 205 group project created in Fall 2017. It is developed by [Kara Spencer](https://github.com/Arc39){:target="_blank"}, [Carlos Estrada](https://github.com/cestrrada){:target="_blank"}, and [Jacob Gull](https://github.com/Jacob0G){:target="_blank"}.
+Meme Generator is a CST 205 group project created in Fall 2017. It is developed by [Kara Spencer](https://github.com/Arc39), [Carlos Estrada](https://github.com/cestrrada), and [Jacob Gull](https://github.com/Jacob0G).
 
 Created for our fellow lovers and creators of dank memes, Meme Generator allows users to craft their own masterpieces using meme templates, filters, and custom text. For those looking for some extra spiciness, users can also upload their own meme images as well.
 

@@ -34,5 +34,5 @@ Nox is an iOS theme made for the Anemone and Snowboard theming engines. Featurin
 	- Tweak icons
 
 #### Complete Your Setup
-- [NoctisXI](https://repo.packix.com/package/com.laughingquoll.noctisxi/){:target="_blank"} by LaughingQuoll
-- [Eclipse X (iOS 11)](https://repo.packix.com/package/com.laughingquoll.noctisxi/){:target="_blank"} by Guillermo Morán
+- [NoctisXI](https://repo.packix.com/package/com.laughingquoll.noctisxi/) by LaughingQuoll
+- [Eclipse X (iOS 11)](https://repo.packix.com/package/com.laughingquoll.noctisxi/) by Guillermo Morán
