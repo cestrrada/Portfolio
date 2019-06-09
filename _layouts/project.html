@@ -47,7 +47,7 @@
 								{% assign images = site.assets.img | append: page.slug | append: "/" %}
 								{% for image in site.static_files %}
 									{% if image.path contains images and image.path != featured %}
-										<img class="project-img" src="{{ image.path }}"/>
+										<img class="project-img" src="{{ image.path }}" alt="{{image.path | replace: '-', ' ' | replace: images, '' | capitalize }}"/>
 									{% endif %}
 								{% endfor %}
 							</div>
