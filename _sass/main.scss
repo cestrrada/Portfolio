@@ -9,13 +9,6 @@
 	text-decoration: none;
 }
 
-.text-header-sm {
-	font-weight: 400;
-	letter-spacing: .1em;
-	text-transform: uppercase;
-	color: $text-muted;
-}
-
 #site-info {
 	padding-bottom: 12rem;
 	
@@ -31,7 +24,7 @@
 	}
 }
 
-#project, #portfolio {
+#portfolio {
 	margin-top: -12rem;
 }
 
@@ -48,8 +41,3 @@ $image-size: 128px;
 		box-shadow: 0 0 0 10px rgba(mix(color-yiq($light), $light, 15%), .5);
 	}
 }
-
-/*#about {*/
-/*	overflow: visible;*/
-/*	margin-top: $image-size / 2;*/
-/*}*/

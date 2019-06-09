@@ -6,19 +6,20 @@
 		<header class="project-bg" style="background-image: url({{ featured }});"></header>
 			
 		<main id="project" class="container">
-			<div class="row">
+			<article class="row">
 				<div class="col-12 col-lg-8 mx-auto">
 				
 					<div class="card card-shadow bg-dark-accent">
 						<div class="card-body p-4 p-md-5">
+						<h1 class="display-4 mb-0 text-center">{{ page.title }}</h1>
 							<div id="project-info" class="mb-4 text-center">
-								<small class="text-header-sm">{{ page.category }}</small>
-								<h1 class="display-4 mb-0">{{ page.title }}</h1>
-								<p class="text-muted">
-								{% if page.version %}
-									Version: {{ page.version }}<br>
-								{% endif %}
-								Updated: {{ page.date | date: '%B %d, %Y'}}
+								<div class="byline text-muted my-2">
+									<p class="m-0">{{ page.category }} •
+										<time itemprop="pubdate">{{ page.date | date: '%B %d, %Y'}}</time>
+									</p>
+								</div>
+								<p class="mb-2 text-muted">
+									{% if page.version %} Version: {{ page.version }} {% endif %}
 								</p>
 								
 								{% for btn in page.buttons %}
@@ -31,17 +32,9 @@
 										{% endif %}
 									</a>
 								{% endfor %}
-								
-								{% if page.github %}
-									<a href="{{ page.github }}" class="btn btn-outline-light mx-2" aria-label="{{ project.title }} GitHub repo">
-										<i class="fab fa-github mr-2"></i>{{ page.github | split: "https://github.com/" }}
-									</a>
-								{% endif %}
 							</div>
 							
-							<article>
 							{{ content }}
-							</article>
 							
 							<div class="project-img-container mt-4">
 								{% assign images = site.assets.img | append: page.slug | append: "/" %}
@@ -55,7 +48,7 @@
 					</div>
 					
 				</div><!-- col -->
-			</div><!-- row -->
+			</article><!-- row -->
 		</main>
 		{% include footer.html %}
 	</body>
