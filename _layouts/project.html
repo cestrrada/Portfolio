@@ -22,7 +22,7 @@
 								</p>
 								
 								{% for btn in page.buttons %}
-									<a href="{{ btn.url }}" class="btn {{ btn.color }} btn-primary m-2">
+									<a href="{{ btn.url }}" class="btn {{ btn.color }} btn-primary m-2" aria-label="{{ btn.name }}">
 										<i class="{{ btn.icon }} mr-2"></i>
 										{% if btn.name == "github" %}
 											{{ btn.url | split: "https://github.com/" }}
@@ -33,7 +33,7 @@
 								{% endfor %}
 								
 								{% if page.github %}
-									<a href="{{ page.github }}" class="btn btn-outline-light mx-2">
+									<a href="{{ page.github }}" class="btn btn-outline-light mx-2" aria-label="{{ project.title }} GitHub repo">
 										<i class="fab fa-github mr-2"></i>{{ page.github | split: "https://github.com/" }}
 									</a>
 								{% endif %}
