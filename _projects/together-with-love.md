@@ -4,7 +4,7 @@ title: Together with Love
 date: January 1, 2017
 category: Design
 
-featured: together-with-love/featured.png
+featured: together-with-love/featured.jpg
 description: A collection of concept designs created for Together with Love, an annual 5K/10K charity event held in Pacific Grove, California.
 keywords: adobe illustrator graphics design pacific grove monterey csumb
 ---
