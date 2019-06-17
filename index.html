@@ -10,7 +10,7 @@ featured: site/featured.jpg
 		<section id="site-info" class="bg-dark-accent text-center pt-5">
 			<div class="container">
 				<span class="d-block logo-80 my-4 svg-light">{% include logo.svg %}</span>
-				<h1 class="font-weight-bold">Carlos Estrada</h1>
+				<h1 class="font-weight-bold mb-0">Carlos Estrada</h1>
 				<h5 class="text-muted font-weight-bold" itemProp="description">Developer & Designer</h5>
 				{% for social in site.social %}
 					<a href="{{ social.url }}" class="social-icon mx-2 text-decoration-none" aria-label="{{ social.name }} link">
@@ -28,11 +28,18 @@ featured: site/featured.jpg
 				{% assign projects = site.projects | sort: 'date' | reverse %}
 				{% for project in projects %}
 					<div class="col-12 col-md-6 col-lg-4 mb-4">
-						<div class="card card-hover bg-dark-accent">
-							<a href="{{ project.url }}" aria-label="{{ project.title }} – {{project.category }}" class="card-link">
-								<div style="background-image: url({{ site.assets.img | append: project.featured }})" class="project-cover"></div>
-							</a>
-						</div>
+						<a href="{{ project.url }}" aria-label="{{ project.title }} – {{project.category }}" class="card-link">
+							<div class="card card-hover bg-dark-accent">
+								{% if project.featured != null %}
+									<img src="{{ site.assets.img | append: project.featured }}" class="card-img-top" alt="{{ project.title }} featured image">
+								{% else %}
+									<div class="card-body">
+										<h3 class="card-title font-weight-bold">{{ project.title }}</h3>
+										<p class="card-text text-muted">{{ project.description }}</p>
+									</div>
+								{% endif %}
+							</div>
+						</a>
 					</div>
 				{% endfor %}
 				
@@ -41,8 +48,8 @@ featured: site/featured.jpg
 
 		<section id="bio" class="container">
 			<div class="row mb-2">
-				<div class="col-12 col-md-6 mb-4">
-					<div class="card card-hover bg-dark-accent p-2">
+				<div class="col-12 col-md-6 mb-4 mb-md-0">
+					<div class="card card-hover bg-dark-accent p-2 h-100">
 						<div class="card-body p-4 p-md-5">
 							{% capture my_include %}{% include background.md %}{% endcapture %}
 							{{ my_include | markdownify }}
@@ -51,7 +58,7 @@ featured: site/featured.jpg
 				</div>	
 				
 				<div class="col-12 col-md-6">
-					<div class="card card-hover bg-dark-accent p-2">
+					<div class="card card-hover bg-dark-accent p-2 h-100">
 						<div class="card-body p-4 p-md-5">
 							{% capture my_include %}{% include experience.md %}{% endcapture %}
 							{{ my_include | markdownify }}
