@@ -1,7 +1,7 @@
 ---
 layout: project
 title: The Seaside Society
-date: June 2019
+date: June 15, 2019
 category: Design
 
 featured: seaside-society/featured.jpg
@@ -31,4 +31,6 @@ I sat and pondered about how I could fix the current design. My client wanted me
 
 I studied the idea closely and decided to give it a shot and boy was I glad I did it. What seemed like a tangled mess of circles quickly (and very satisfyingly) became the new face of The Seaside Society.
 
-***More photos and information coming soon...***
+#### Logo Progression
+
+Check out the photos below to view the evolution of the logo from its final design to its first iteration and the image that started it all.
