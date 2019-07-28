@@ -6,7 +6,7 @@ featured: site/featured.jpg
 ---
 <main>
 	<article id="home">
-	
+
 		<section id="site-info" class="bg-dark-accent text-center pt-5">
 			<div class="container">
 				<span class="d-block logo-80 my-4 svg-light">{% include logo.svg %}</span>
@@ -17,14 +17,14 @@ featured: site/featured.jpg
 						<i class="{{ social.icon }} text-light"></i>
 					</a>
 				{% endfor %}
-			
+
 			</div>
 		</section>
-		
+
 		<section id="portfolio" class="container">
 
 			<div class="row mt-5">
-						
+
 				{% assign projects = site.projects | sort: 'date' | reverse %}
 				{% for project in projects %}
 					<div class="col-12 col-md-6 col-lg-4 mb-4">
@@ -42,7 +42,7 @@ featured: site/featured.jpg
 						</a>
 					</div>
 				{% endfor %}
-				
+
 			</div>
 		</section>
 
@@ -55,22 +55,22 @@ featured: site/featured.jpg
 							{{ my_include | markdownify }}
 						</div>
 					</div>
-				</div>	
-				
+				</div>
+
 				<div class="col-12 col-md-6">
 					<div class="card card-hover bg-dark-accent p-2 h-100">
 						<div class="card-body p-4 p-md-5">
 							{% capture my_include %}{% include experience.md %}{% endcapture %}
 							{{ my_include | markdownify }}
-							<a href="{{ site.assets.files | append: 'resume-02-2019.pdf' }}" class="btn btn-block btn-info">
+							<a href="{{ site.assets.files | append: 'resume-07-2019.pdf' }}" class="btn btn-block btn-info">
 								<i class="fas fa-file-download mr-2"></i>Download Resume
 							</a>
 						</div>
 					</div>
 				</div>
-							
+
 			</div>
 		</section>
-		
+
 	</article>
 </main>
