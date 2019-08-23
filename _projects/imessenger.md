@@ -4,6 +4,12 @@ title: iMessenger
 date: August 2019
 category: Website
 
+buttons:
+  - name: github
+    url: https://github.com/cestrrada/chat-app
+    color: btn-light
+    icon: fab fa-github
+
 featured: imessenger/featured.jpg
 description: An Apple-styled Slack-inspired group chat app written in React.
 keywords: web design development webapp imessage slack apple chat chatroom groupchat

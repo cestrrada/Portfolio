@@ -4,6 +4,12 @@ title: The Lutrinae
 date: July 14, 2019
 category: Web Design
 
+buttons:
+    - name: Visit Website
+      url: http://mockbuster.caestrada.com
+      color: btn-light
+      icon: fas fa-link
+
 featured: lutrinae/featured.jpg
 description: A news website designed for California State University, Monterey Bay's student-run newspaper, The Lutrinae, formerly known as the Otter Realm.
 keywords: web design college news newspaper wordpress lutrinae monterey csumb
