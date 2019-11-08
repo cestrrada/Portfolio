@@ -7,23 +7,50 @@ featured: site/featured.jpg
 <main>
 	<article id="home">
 
-		<section id="site-info" class="bg-dark-accent text-center pt-5">
+		<section id="site-info" class="bg-dark-accent">
 			<div class="container">
-				<span class="d-block logo-80 my-4 svg-light">{% include logo.svg %}</span>
-				<h1 class="font-weight-bold mb-0">Carlos Estrada</h1>
-				<h5 class="text-muted font-weight-bold" itemProp="description">Developer & Designer</h5>
-				{% for social in site.social %}
-					<a href="{{ social.url }}" class="social-icon mx-2 text-decoration-none" aria-label="{{ social.name }} link">
-						<i class="{{ social.icon }} text-light"></i>
-					</a>
-				{% endfor %}
+				<div class="row text-center text-md-left">
+					<div class="col-12 col-md-8 order-last order-md-first">
 
+						<h1 class="display-5 font-weight-bold mb-0">Carlos Estrada</h1>
+						<h4 class="text-muted font-weight-bold mb-3" itemProp="description">Developer & Designer</h4>
+
+						{% capture my_include %}{% include background.md %}{% endcapture %}
+						{{ my_include | markdownify }}
+
+
+						{% for social in site.social %}
+							<a href="{{ social.url }}" class="social-icon mx-2 text-decoration-none" aria-label="{{ social.name }} link">
+								<i class="{{ social.icon }} text-light"></i>
+							</a>
+						{% endfor %}
+
+						<div class="mt-2">
+							<a href="{{ site.assets.files | append: 'resume-11-2019.pdf' }}" class="btn btn-info">
+									<i class="fas fa-file-download mr-2"></i>Download Resume
+								</a>
+						</div>
+
+					</div>
+					
+					<div class="col-12 col-md-4 order-first order-md-last text-center my-auto">
+						<span class="d-block logo-100 my-4 svg-light">{% include logo.svg %}</span>
+					</div>
+				</div>
 			</div>
 		</section>
 
 		<section id="portfolio" class="container">
 
-			<div class="row mt-5">
+
+			<div class="row mt-4">
+
+					{% assign projects = site.projects | sort: 'date' | reverse %}
+
+				<div class="col-12 mb-3">
+					<h2 class="font-weight-bold mb-0">Portfolio</h2>
+					<h5 class="text-muted">{{ projects.size }} Projects</h5>
+				</div>
 
 				{% assign projects = site.projects | sort: 'date' | reverse %}
 				{% for project in projects %}
@@ -42,32 +69,6 @@ featured: site/featured.jpg
 						</a>
 					</div>
 				{% endfor %}
-
-			</div>
-		</section>
-
-		<section id="bio" class="container">
-			<div class="row mb-2">
-				<div class="col-12 col-md-6 mb-4 mb-md-0">
-					<div class="card card-hover bg-dark-accent p-2 h-100">
-						<div class="card-body p-4 p-md-5">
-							{% capture my_include %}{% include background.md %}{% endcapture %}
-							{{ my_include | markdownify }}
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12 col-md-6">
-					<div class="card card-hover bg-dark-accent p-2 h-100">
-						<div class="card-body p-4 p-md-5">
-							{% capture my_include %}{% include experience.md %}{% endcapture %}
-							{{ my_include | markdownify }}
-							<a href="{{ site.assets.files | append: 'resume-11-2019.pdf' }}" class="btn btn-block btn-info">
-								<i class="fas fa-file-download mr-2"></i>Download Resume
-							</a>
-						</div>
-					</div>
-				</div>
 
 			</div>
 		</section>
