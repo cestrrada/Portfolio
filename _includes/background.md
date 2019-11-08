@@ -1,1 +1,1 @@
-**Carlos Estrada** is a senior Computer Science student at [CSU Monterey Bay](https://csumb.edu/) concentrating in Software Engineering. During his free time, he enjoys taking on personal design projects, websites and iOS applications. He is currently pursuing a career in iOS or website development.
+**Hi, I'm Carlos.** I'm a senior Computer Science student at [CSU Monterey Bay](https://csumb.edu/) concentrating in Software Engineering. I enjoy creating mobile apps, websites and logo designs. I am currently pursuing a career as an iOS or full-stack web developer.
