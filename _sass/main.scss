@@ -1,26 +1,29 @@
-@import "theme";
+@import "new-colors";
 @import "bootstrap/bootstrap";
 @import "override";
 @import "components";
 @import "logo";
 @import "project";
+@import "theme";
 
 .text-decoration-none, .text-decoration-none:hover {
 	text-decoration: none;
 }
 
 #site-info {
-	padding: 5em 0;
 	
 	.social-icon {
 		font-size: 1.75em;
-		
-		.fab, .fab:hover, .fas, .fas:hover { transition: .25s; }
-		.fa-twitter:hover { color: #1da1f2 !important; }
-		.fa-github:hover { color: $gray-500 !important; }
-		.fa-behance:hover { color: #1769ff !important; }
-		.fa-linkedin-in:hover { color: #00a0dc !important; }
-		.fa-envelope:hover { color: $gray-500 !important; }
+
+		.fab, .fas {
+			color: darken($white, 20%);
+			transition: .25s;
+
+			&:hover {
+				color: $white;
+				transition: .25s;
+			}
+		}
 	}
 }
 

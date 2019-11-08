@@ -1,7 +1,65 @@
-$theme-colors: (
-	"light": #f6f6f6,
-	"dark": #121212,
-	"dark-accent": #1E1E1E
-);
+// Default: dark theme
 
-$text-muted: #949494;
+.bg-theme {
+	background-color: var(--dark);
+}
+
+.bg-theme-accent {
+	background-color: var(--dark-accent);
+}
+
+.text-theme {
+	color: var(--light);
+}
+
+.svg-theme svg path {
+	fill: #cecece;
+}
+
+// Prefers light theme
+
+@media (prefers-color-scheme: light) {
+	.bg-theme {
+		background-color: var(--white);
+	}
+
+	.bg-theme-accent {
+		background-color: var(--light);
+	}
+
+	.text-theme {
+		color: var(--dark);
+	}
+
+	.svg-theme svg path {
+		fill: darken($text-muted, 20%);
+	}
+
+	.btn-light {
+		color: rgba($color: #000000, $alpha: 0.85) !important;
+		background-color: rgba($color: #000000, $alpha: 0.85 - 0.7) !important;
+
+		&:hover {
+			background-color: rgba($color: #000000, $alpha: 0.85 - 0.5) !important;
+		}
+	}
+
+	article a {
+		color: $link-color;
+		border-radius: .2rem;
+		font-weight: 500;
+		
+		&:hover {
+			transition: .25s;
+			color: darken($link-color, 10%);;
+		}
+	}
+
+	.social-icon .fab, .social-icon .fas {
+		color: darken($text-muted, 10%) !important;
+
+		&:hover {
+			color: $dark !important;
+		}
+	}
+}

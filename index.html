@@ -7,8 +7,8 @@ featured: site/featured.jpg
 <main>
 	<article id="home">
 
-		<section id="site-info" class="bg-dark-accent">
-			<div class="container">
+		<section id="site-info" class="bg-theme-accent py-5">
+			<div class="container py-2 py-md-4">
 				<div class="row text-center text-md-left">
 					<div class="col-12 col-md-8 order-last order-md-first">
 
@@ -21,12 +21,12 @@ featured: site/featured.jpg
 
 						{% for social in site.social %}
 							<a href="{{ social.url }}" class="social-icon mx-2 text-decoration-none" aria-label="{{ social.name }} link">
-								<i class="{{ social.icon }} text-light"></i>
+								<i class="{{ social.icon }} text-theme"></i>
 							</a>
 						{% endfor %}
 
 						<div class="mt-2">
-							<a href="{{ site.assets.files | append: 'resume-11-2019.pdf' }}" class="btn btn-info">
+							<a href="{{ site.assets.files | append: 'resume-11-2019.pdf' }}" class="btn btn-primary">
 									<i class="fas fa-file-download mr-2"></i>Download Resume
 								</a>
 						</div>
@@ -34,7 +34,7 @@ featured: site/featured.jpg
 					</div>
 					
 					<div class="col-12 col-md-4 order-first order-md-last text-center my-auto">
-						<span class="d-block logo-100 my-4 svg-light">{% include logo.svg %}</span>
+						<span class="d-block logo-100 my-4 svg-theme">{% include logo.svg %}</span>
 					</div>
 				</div>
 			</div>
