@@ -16,6 +16,18 @@
 	fill: #cecece;
 }
 
+.border-theme {
+	border-color: $dark !important;
+}
+
+.divider-theme {
+	display: block;
+	height: 1px;
+	width: 100%;
+	@extend .my-4;
+	background-color: $dark;
+}
+
 // Prefers light theme
 
 @media (prefers-color-scheme: light) {
@@ -61,5 +73,19 @@
 		&:hover {
 			color: $dark !important;
 		}
+	}
+
+	.border-theme {
+		border-color: $gray-300 !important;
+	}
+
+	.divider-theme {
+		background-color: $gray-300;
+	}
+
+	.card-shadow {
+		-webkit-box-shadow: 0px 15px 30px -15px rgba(0,0,0,0.5);
+		-moz-box-shadow: 0px 15px 30px -15px rgba(0,0,0,0.5);
+		box-shadow: 0px 15px 30px -15px rgba(0,0,0,0.5);
 	}
 }
