@@ -1,1 +1,1 @@
-**Hi, I'm Carlos.** I'm a senior Computer Science student at [CSU Monterey Bay](https://csumb.edu/) concentrating in Software Engineering. I enjoy creating mobile apps, websites and logo designs. I am currently pursuing a career as an iOS or full-stack web developer.
+I'm a senior Computer Science student studying Software Engineering at [CSU Monterey Bay](https://csumb.edu/). I enjoy creating mobile apps, websites and doing graphic design work on the side. I am currently pursuing a career as an iOS or full-stack web developer.
