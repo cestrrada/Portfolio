@@ -9,7 +9,7 @@ buttons:
       color: btn-light
       icon: fas fa-link
 
-featured: mrapella-art/featured.jpg
+featured: rapella-art/featured.jpg
 description: A portfolio website for Digital & Fine Artist, Madi Rapella. Built from the ground up using Jekyll, Bootstrap and compatible with Forestry CMS.
 keywords: web design static jekyll bootstrap forestry digital fine art artist
 ---
