@@ -4,9 +4,13 @@ title: Rapella Art
 date: November 19, 2019
 category: Web
 buttons:
-    - name: Visit Website
+    - name: cestrrada/rapella-art
       url: http://rapellaart.com/
       color: btn-light
+      icon: fab fa-github
+    - name: Visit Website
+      url: http://rapellaart.com/
+      color: btn-info
       icon: fas fa-link
 
 featured: rapella-art/featured.jpg
@@ -20,7 +24,7 @@ Madi Rapella is a Digital & Fine Artist currently pursuing a degree in Visual an
 
 #### Development
 
-The portfolio website was developed from strach using [Jekyll](https://jekyllrb.com/) and a custom Bootstrap build. To allow her the same content management capabilities as WordPress without the databases and excess bulk, the site was built with the help of [Forestry CMS](https://forestry.io/)–a CMS for generating and managing static sites with a git backend.
+The portfolio website was developed from scratch using [Jekyll](https://jekyllrb.com/) and a custom Bootstrap build. To allow her the same content management capabilities as WordPress without the databases and excess bulk, the site was built with the help of [Forestry CMS](https://forestry.io/)–a content management system for generating and managing static sites with a git backend.
 
 #### Design
 
