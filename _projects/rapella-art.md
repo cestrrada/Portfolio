@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Rapella Art
-date: November 19, 2019
+date: January 2020
 category: Web
 buttons:
     - name: cestrrada/rapella-art
