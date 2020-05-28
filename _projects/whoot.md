@@ -2,11 +2,11 @@
 layout: project
 title: Whoot
 date: December 2019
-category: iOS App
+category: Social Network
 
 buttons:
-  - name: github
-    url: https://github.com/cestrrada/whoot-app
+  - name: Whoot (GitHub Organization)
+    url: https://github.com/whootio
     color: btn-light
     icon: fab fa-github
 

@@ -1,1 +1,1 @@
-I'm a senior Computer Science student studying Software Engineering at [CSU Monterey Bay](https://csumb.edu/). I enjoy creating mobile apps, websites and doing graphic design work on the side. I am currently pursuing a career as an iOS or full-stack web developer.
+I'm a [CSU Monterey Bay](https://csumb.edu/) graduate with a bachelor's in Computer Science and a concentration in Software Engineering. I enjoy creating mobile apps, websites and doing graphic design work on the side. I am currently pursuing a career as a Software Engineer.

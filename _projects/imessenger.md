@@ -9,10 +9,6 @@ buttons:
     url: https://github.com/cestrrada/imessenger
     color: btn-light
     icon: fab fa-github
-  - name: View Demo
-    url: https://chat.caestrada.com
-    color: btn-primary
-    icon: fas fa-link
 
 featured: imessenger/featured.jpg
 description: An Apple-styled Slack-inspired group chat app written in React.
