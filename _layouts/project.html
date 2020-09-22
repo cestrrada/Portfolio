@@ -32,7 +32,8 @@
 			<div class="row">
 				<div class="col-12 col-md-10 mx-auto">
 
-					{% for btn in page.buttons %}
+					<div class="text-center text-md-left">
+						{% for btn in page.buttons %}
 						<a href="{{ btn.url }}" class="btn {{ btn.color }} btn-primary my-2 mr-2" aria-label="{{ btn.name }}">
 							<i class="{{ btn.icon }} mr-2"></i>
 							{% if btn.name == "github" %}
@@ -41,7 +42,8 @@
 								{{ btn.name }}
 							{% endif %}
 						</a>
-					{% endfor %}
+						{% endfor %}
+					</div>
 
 					<article class="mt-3">
 						{{ content }}

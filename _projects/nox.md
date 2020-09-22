@@ -1,13 +1,21 @@
 ---
 layout: project
 title: Nox
-date: January 2020
+date: September 2020
 category: Design
 
 buttons:
-  - name: Download on Packix
+  - name: View on Packix
     url: https://repo.packix.com/package/com.caestrada.nox/
     color: btn-success
+    icon: fas fa-cube
+  - name: Download ZIP
+    url: /assets/files/Nox_v3.1_ios14.zip
+    color: btn-info
+    icon: fas fa-file-archive
+  - name: Download DEB
+    url: /assets/files/Nox_v3.1.deb
+    color: btn-light
     icon: fas fa-cube
 
 version: 3.1
@@ -15,6 +23,14 @@ featured: nox/featured.jpg
 description: A dark iOS theme made for the Anemone and Snowboard theming engines, featuring over 300 icons.
 keywords: ios theme dark mod anemone snowboard icons applications design
 ---
+
+<div class="alert alert-success">
+<i class="fas fa-info-circle mr-2"></i>
+  <strong>Not sure what to download?</strong>
+</div>
+* If you're an iOS 14 user, [download the ZIP file](/assets/files/Nox_v3.1_ios14.zip).
+* If you're jailbroken and want to download from Packix, add [https://repo.packix.com](https://repo.packix.com) to your sources and search for **Nox**.
+* If you're jailbroken and want to install manually through Filza, [download the DEB file](/assets/files/Nox_v3.1.deb).
 
 ### Overview
 
