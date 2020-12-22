@@ -2,7 +2,7 @@
 layout: project
 title: iMessenger
 date: August 2019
-category: Website
+category: Web app
 
 buttons:
   - name: github
@@ -17,7 +17,7 @@ keywords: web design development webapp imessage slack apple chat chatroom group
 
 ### Overview
 
-iMessenger is an Apple-styled Slack-inspired group chat app developed in [React](https://reactjs.org/) using [Pusher Chatkit's API](https://pusher.com/chatkit). It allows users to create and join chat rooms and send messages to friends. **Development on this project has been suspended until further notice. Feel free to explore the soruce code on [GitHub](https://github.com/cestrrada/imessenger)**.
+iMessenger is an Apple-styled Slack-inspired group chat app developed in [React](https://reactjs.org/) using [Pusher Chatkit's API](https://pusher.com/chatkit). It allows users to create and join chat rooms and send messages to friends. **This project is no longer maintained, but you can still explore the soruce code on [GitHub](https://github.com/cestrrada/imessenger)**.
 
 
 #### Features

@@ -1,1 +1,3 @@
-I'm a [CSU Monterey Bay](https://csumb.edu/) graduate with a bachelor's in Computer Science and a concentration in Software Engineering. I enjoy creating mobile apps, websites and doing graphic design work on the side. I am currently pursuing a career as a Software Engineer.
+I'm a <a href="https://csumb.edu/" target="_">CSU Monterey Bay</a> alumni with a bachelor's in Computer Science. 
+
+I am currently working on <a href="https://codecrunch.io/" target="_" class="text-purple">Code Crunch</a>, a company I co-founded that creates automation and analytics tools that help Computer Science educators streamline their grading process.

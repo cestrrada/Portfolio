@@ -2,7 +2,7 @@
 layout: project
 title: The Seaside Society
 date: June 15, 2019
-category: Design
+category: Graphic Design
 
 featured: seaside-society/featured.jpg
 description: A brand identity created for The Seaside Society, a local organization in Seaside, California.

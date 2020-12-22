@@ -2,7 +2,7 @@
 layout: project
 title: Nox
 date: September 2020
-category: Design
+category: Graphic Design
 
 buttons:
   - name: View on Packix

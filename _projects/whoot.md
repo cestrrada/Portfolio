@@ -2,7 +2,7 @@
 layout: project
 title: Whoot
 date: December 2019
-category: Social Network
+category: Mobile app
 
 buttons:
   - name: Whoot (GitHub Organization)

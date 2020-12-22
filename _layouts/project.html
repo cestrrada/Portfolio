@@ -35,7 +35,7 @@
 					<div class="text-center text-md-left">
 						{% for btn in page.buttons %}
 						<a href="{{ btn.url }}" class="btn {{ btn.color }} btn-primary my-2 mr-2" aria-label="{{ btn.name }}">
-							<i class="{{ btn.icon }} mr-2"></i>
+							<i class="{{ btn.icon }} mr-1"></i>
 							{% if btn.name == "github" %}
 								{{ btn.url | split: "https://github.com/" }}
 							{% else %}

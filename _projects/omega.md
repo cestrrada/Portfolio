@@ -2,7 +2,7 @@
 layout: project
 title: Omega Airlines
 date: December 16, 2018
-category: Software
+category: Mobile App
 
 buttons:
   - name: github

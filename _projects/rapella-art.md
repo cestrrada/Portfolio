@@ -2,7 +2,7 @@
 layout: project
 title: Rapella Art
 date: January 2020
-category: Web
+category: Website
 buttons:
     - name: cestrrada/rapella-art
       url: http://rapellaart.com/

@@ -2,7 +2,7 @@
 layout: project
 title: The Lutrinae
 date: July 14, 2019
-category: Web Design
+category: Website
 
 buttons:
     - name: Visit Website
